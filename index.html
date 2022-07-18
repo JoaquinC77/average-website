@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/public/keys.png" />
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="App para calcular tus promedios con porcentajes!" />
+    <title>Average | Website</title>
+  </head>
+  <body>
+    <main id="app">
+      <section class="title-container">
+        <h1>Bienvenidos!</h1>
+        <div>
+          <span>Calcula tu promedio aquí!</span>
+          <span>👇🏻🤓</span>
+        </div>
+      </section>
+      <section class="notes-container">
+        <form class="note-form" id="note-form">
+          <div class="container-rows" id="container-notes">
+            <div class="instruction">
+              <p>Ingresa tus notas sin puntos!</p>
+              <span>Ej: 60</span>
+            </div>
+            <div class="note-row">
+              <span class="note-example">Nota</span>
+              <span class="note-example">%</span>
+            </div>
+            <div class="note-row">
+              <input type="number" class="note" min="0" name="note"/>
+              <input type="number" class="note" min="0" max="100" name="percentage"/>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit">
+              <img src="/public/sum.svg" class="add-button filter-effect" id="add-note"/>
+            </button>
+            <button type="button">
+              <img src="/public/equal.svg" class="add-button filter-effect" id="calc-result"/>
+            </button>
+            <button type="button">
+              <img src="/public/clear.svg" class="add-button filter-effect" id="clear"/>
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="container-result">
+        <div class="result-text" id="result-text">
+          <p id="message-result"><span id="result"></span></p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Desarrollado por Joaquín Cabello. 💚</p>
+      </footer>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
